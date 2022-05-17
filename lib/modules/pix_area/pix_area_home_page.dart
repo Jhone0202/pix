@@ -1,9 +1,11 @@
 import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:pix/modules/send_pix/send_pix_page.dart';
 import 'package:pix/shared/components/custom_icon_button.dart';
 import 'package:pix/shared/components/custom_list_tile.dart';
 
 class PixAreaHomePage extends StatefulWidget {
+  static String routeName = '/';
   const PixAreaHomePage({Key? key}) : super(key: key);
 
   @override
@@ -92,7 +94,10 @@ class _PixAreaHomePageState extends State<PixAreaHomePage> {
               CustomIconButton(
                 label: 'Enviar Pix',
                 svgAsset: 'assets/icons/icon_money_send.svg',
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(
+                  context,
+                  SendPixPage.routeName,
+                ),
               ),
               CustomIconButton(
                 label: 'Receber Pix',
