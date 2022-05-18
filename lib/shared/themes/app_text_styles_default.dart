@@ -32,4 +32,11 @@ class AppTextStylesDefault extends IAppTextStyles {
         fontWeight: FontWeight.w600,
         fontSize: 28,
       );
+
+  @override
+  TextStyle get headline2 => GoogleFonts.openSans(
+        color: AppTheme.colors.grey900,
+        fontWeight: FontWeight.w600,
+        fontSize: 32,
+      );
 }

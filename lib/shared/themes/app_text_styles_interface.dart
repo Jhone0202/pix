@@ -5,4 +5,5 @@ abstract class IAppTextStyles {
   TextStyle get title2;
   TextStyle get subtitle1;
   TextStyle get headline1;
+  TextStyle get headline2;
 }

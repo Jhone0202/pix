@@ -1,5 +1,6 @@
 import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:pix/modules/send_pix/pix_sent_page.dart';
 import 'package:pix/shared/components/icon_label.dart';
 import 'package:pix/shared/components/primary_button.dart';
 import 'package:pix/shared/number_util.dart';
@@ -158,7 +159,7 @@ class _ConfirmPixPageState extends State<ConfirmPixPage> {
           ),
           PrimaryButton(
             label: 'Transferir',
-            press: () {},
+            press: () => Navigator.pushNamed(context, PixSentPage.routeName),
           ),
         ],
       ),
