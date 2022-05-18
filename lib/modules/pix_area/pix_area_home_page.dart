@@ -43,8 +43,11 @@ class _PixAreaHomePageState extends State<PixAreaHomePage> {
               ),
               RichText(
                 text: const TextSpan(
-                  style:
-                      TextStyle(fontSize: 40, height: 1.5, color: Colors.black),
+                  style: TextStyle(
+                    fontSize: 40,
+                    height: 1.5,
+                    color: Colors.black,
+                  ),
                   children: [
                     TextSpan(
                       text: 'Envie ',
