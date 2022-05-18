@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pix/modules/send_pix/send_pix_page.dart';
 import 'package:pix/shared/components/custom_icon_button.dart';
 import 'package:pix/shared/components/custom_list_tile.dart';
+import 'package:pix/shared/components/icon_label.dart';
 
 class PixAreaHomePage extends StatefulWidget {
   static String routeName = '/';
@@ -22,12 +23,9 @@ class _PixAreaHomePageState extends State<PixAreaHomePage> {
       body: ListView(
         padding: const EdgeInsets.all(24),
         children: [
-          Row(
-            children: const [
-              Icon(FeatherIcons.zap, size: 16),
-              SizedBox(width: 4),
-              Text('Área Pix'),
-            ],
+          const IconLabel(
+            iconData: FeatherIcons.zap,
+            label: 'Área Pix',
           ),
           const SizedBox(height: 16),
           Stack(
